@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+        xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+
+    <servlet>
+        <display-name>Archetype Created Web Application</display-name>
+        <servlet-name>BeerSelector</servlet-name>
+        <servlet-class>main.controller.BeerSelect</servlet-class>
+    </servlet>
+
+    <context-param>
+        <param-name>adminEmail</param-name>
+        <param-value>fissehaweb@gmail.com</param-value>
+    </context-param>
+    <servlet-mapping>
+        <servlet-name>BeerSelector</servlet-name>
+        <url-pattern>/SelectBeer.do</url-pattern>
+    </servlet-mapping>
+
+</web-app>
